@@ -1,0 +1,359 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x10 J2
+U 1 1 5E4D67F5
+P 8150 3700
+F 0 "J2" V 8367 3646 50  0000 C CNN
+F 1 "Conn_01x10" V 8276 3646 50  0000 C CNN
+F 2 "" H 8150 3700 50  0001 C CNN
+F 3 "~" H 8150 3700 50  0001 C CNN
+	1    8150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5E4D44C4
+P 8150 2350
+F 0 "J1" H 8068 1625 50  0000 C CNN
+F 1 "Conn_01x10" H 8068 1716 50  0000 C CNN
+F 2 "" H 8150 2350 50  0001 C CNN
+F 3 "~" H 8150 2350 50  0001 C CNN
+	1    8150 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 4700
+Wire Wire Line
+	4650 4700 4650 4550
+Wire Wire Line
+	4850 4700 4650 4700
+Wire Wire Line
+	4850 4750 4850 4700
+Wire Wire Line
+	5100 4750 4850 4750
+Text GLabel 5100 4750 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4850 4400 4650 4400
+Connection ~ 4850 4400
+Wire Wire Line
+	5100 4400 4850 4400
+Text GLabel 5100 4400 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	3700 4350 3850 4350
+Wire Wire Line
+	3700 4300 3700 4350
+Wire Wire Line
+	3550 4300 3700 4300
+Wire Wire Line
+	3700 4150 3850 4150
+Wire Wire Line
+	3700 4200 3700 4150
+Wire Wire Line
+	3550 4200 3700 4200
+$Comp
+L Device:C C2
+U 1 1 5E4CF0FC
+P 4850 4550
+F 0 "C2" H 4965 4596 50  0000 L CNN
+F 1 "100nF" H 4965 4505 50  0000 L CNN
+F 2 "" H 4888 4400 50  0001 C CNN
+F 3 "~" H 4850 4550 50  0001 C CNN
+	1    4850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5650 4650 5650
+Wire Wire Line
+	4600 5900 4650 5900
+Text GLabel 4650 5900 2    50   Input ~ 0
+GND
+Text GLabel 4650 5650 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	3900 5750 3600 5750
+Wire Wire Line
+	3850 5900 3850 5950
+Wire Wire Line
+	3900 5900 3850 5900
+Text GLabel 3850 5950 3    50   Input ~ 0
+TX-BT
+Wire Wire Line
+	3600 5300 3600 5250
+Wire Wire Line
+	3600 6600 3600 6550
+Text GLabel 3600 6600 3    50   Input ~ 0
+GND
+Text GLabel 3600 5250 1    50   Input ~ 0
+RX-BT
+Wire Wire Line
+	3600 6150 3600 6250
+Connection ~ 3600 5750
+Wire Wire Line
+	3600 5600 3600 5750
+Wire Wire Line
+	3600 5750 3600 5850
+$Comp
+L Device:R R1
+U 1 1 5E4CCA89
+P 3600 5450
+F 0 "R1" H 3670 5496 50  0000 L CNN
+F 1 "1K" H 3670 5405 50  0000 L CNN
+F 2 "" V 3530 5450 50  0001 C CNN
+F 3 "~" H 3600 5450 50  0001 C CNN
+	1    3600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E4CC8B3
+P 3600 6000
+F 0 "R2" H 3670 6046 50  0000 L CNN
+F 1 "1K" H 3670 5955 50  0000 L CNN
+F 2 "" V 3530 6000 50  0001 C CNN
+F 3 "~" H 3600 6000 50  0001 C CNN
+	1    3600 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E4CC6F5
+P 3600 6400
+F 0 "R3" H 3670 6446 50  0000 L CNN
+F 1 "1K" H 3670 6355 50  0000 L CNN
+F 2 "" V 3530 6400 50  0001 C CNN
+F 3 "~" H 3600 6400 50  0001 C CNN
+	1    3600 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L New_Library:HC-05 U3
+U 1 1 5E4CC045
+P 4250 5650
+F 0 "U3" H 4250 6125 50  0000 C CNN
+F 1 "HC-05" H 4250 6034 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4350 4750 50  0001 C CIN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 4250 5700 50  0001 C CNN
+	1    4250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5E4CBA2D
+P 3350 4300
+F 0 "J4" H 3268 3975 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3268 4066 50  0000 C CNN
+F 2 "" H 3350 4300 50  0001 C CNN
+F 3 "~" H 3350 4300 50  0001 C CNN
+	1    3350 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Placa-telemetria-0.1-rescue:MAX6675-Sensor_Temperature1 U2
+U 1 1 5E4CB007
+P 4250 4300
+F 0 "U2" H 4250 4875 50  0000 C CNN
+F 1 "MAX6675" H 4250 4784 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4350 3900 50  0001 C CIN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 4250 4350 50  0001 C CNN
+	1    4250 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2300 4900 2300
+Text GLabel 4950 2300 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4900 2000 5200 2000
+Wire Wire Line
+	4900 1850 5350 1850
+Wire Wire Line
+	4950 2150 4900 2150
+Text GLabel 4950 2150 2    50   Input ~ 0
+SCL
+Connection ~ 5350 1850
+Wire Wire Line
+	5600 1850 5350 1850
+Connection ~ 5350 2150
+Wire Wire Line
+	5350 2150 5200 2150
+Wire Wire Line
+	5200 2150 5200 2000
+Wire Wire Line
+	5600 2150 5350 2150
+Text GLabel 5600 2150 2    50   Input ~ 0
+GND
+Text GLabel 5600 1850 2    50   Input ~ 0
+3V3
+$Comp
+L Device:C C1
+U 1 1 5E4CFBB3
+P 5350 2000
+F 0 "C1" H 5465 2046 50  0000 L CNN
+F 1 "100nF" H 5465 1955 50  0000 L CNN
+F 2 "" H 5388 1850 50  0001 C CNN
+F 3 "~" H 5350 2000 50  0001 C CNN
+	1    5350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MPU:MPU-9250 U1
+U 1 1 5E4CA8EC
+P 4300 2400
+F 0 "U1" H 4357 3267 50  0000 C CNN
+F 1 "MPU-9250" H 4357 3176 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 4300 1500 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 4150 3350 50  0001 C CNN
+	1    4300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J3
+U 1 1 5E4D9029
+P 8150 4950
+F 0 "J3" H 8230 4942 50  0000 L CNN
+F 1 "Conn_01x10" H 8230 4851 50  0000 L CNN
+F 2 "" H 8150 4950 50  0001 C CNN
+F 3 "~" H 8150 4950 50  0001 C CNN
+	1    8150 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 4200 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	7850 4200 7950 4200
+Wire Wire Line
+	7850 3300 7950 3300
+Text GLabel 7850 3300 0    50   Input ~ 0
+5V
+Text GLabel 7850 2850 0    50   Input ~ 0
+TX-lora
+Text GLabel 7850 2750 0    50   Input ~ 0
+RX-lora
+Text GLabel 7850 2350 0    50   Input ~ 0
+TX-GPS
+Text GLabel 7850 2250 0    50   Input ~ 0
+RX-GPS
+Text GLabel 7850 2150 0    50   Input ~ 0
+RX-BT
+Text GLabel 7850 2050 0    50   Input ~ 0
+TX-BT
+Text GLabel 7850 1950 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	7850 1950 7950 1950
+Wire Wire Line
+	7850 2050 7950 2050
+Wire Wire Line
+	7850 2150 7950 2150
+Wire Wire Line
+	7850 2250 7950 2250
+Wire Wire Line
+	7850 2350 7950 2350
+Wire Wire Line
+	7850 2750 7950 2750
+Wire Wire Line
+	7850 2850 7950 2850
+Wire Wire Line
+	7850 4550 7950 4550
+Text GLabel 7850 4550 0    50   Input ~ 0
+GND
+Text GLabel 7850 4950 0    50   Input ~ 0
+SDA
+Text GLabel 7850 5050 0    50   Input ~ 0
+SCL
+Text GLabel 7850 5150 0    50   Input ~ 0
+CS-Termo
+Text GLabel 4750 4100 2    50   Input ~ 0
+CS-Termo
+Wire Wire Line
+	4750 4100 4650 4100
+Text GLabel 4750 3950 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	4750 3950 4650 3950
+Text GLabel 4750 4250 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	4750 4250 4650 4250
+Wire Wire Line
+	7850 4950 7950 4950
+Wire Wire Line
+	7850 5050 7950 5050
+Wire Wire Line
+	7850 5150 7950 5150
+Wire Wire Line
+	7850 5250 7950 5250
+Wire Wire Line
+	7850 5350 7950 5350
+Wire Wire Line
+	7850 5450 7950 5450
+Text GLabel 7850 5350 0    50   Input ~ 0
+MISO
+Text GLabel 7850 5250 0    50   Input ~ 0
+MOSI
+Text GLabel 7850 5450 0    50   Input ~ 0
+SCK
+Text GLabel 7850 3400 0    50   Input ~ 0
+Vbat
+Wire Wire Line
+	7850 3400 7950 3400
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E4C55C8
+P 6100 2750
+F 0 "H1" H 6200 2796 50  0000 L CNN
+F 1 "MountingHole" H 6200 2705 50  0000 L CNN
+F 2 "" H 6100 2750 50  0001 C CNN
+F 3 "~" H 6100 2750 50  0001 C CNN
+	1    6100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E4C5EC9
+P 6100 3300
+F 0 "H2" H 6200 3346 50  0000 L CNN
+F 1 "MountingHole" H 6200 3255 50  0000 L CNN
+F 2 "" H 6100 3300 50  0001 C CNN
+F 3 "~" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E4C6CE8
+P 6100 3800
+F 0 "H3" H 6200 3846 50  0000 L CNN
+F 1 "MountingHole" H 6200 3755 50  0000 L CNN
+F 2 "" H 6100 3800 50  0001 C CNN
+F 3 "~" H 6100 3800 50  0001 C CNN
+	1    6100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E4C7AEA
+P 6100 4250
+F 0 "H4" H 6200 4296 50  0000 L CNN
+F 1 "MountingHole" H 6200 4205 50  0000 L CNN
+F 2 "" H 6100 4250 50  0001 C CNN
+F 3 "~" H 6100 4250 50  0001 C CNN
+	1    6100 4250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

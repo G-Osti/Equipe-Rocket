@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name New_Library)(type Legacy)(uri ${KIPRJMOD}/New_Library.lib)(options "")(descr ""))
+  (lib (name New_Library_0)(type Legacy)(uri ${KIPRJMOD}/New_Library_0.lib)(options "")(descr ""))
+  (lib (name Placa-telemetria-0.1-rescue)(type Legacy)(uri "${KIPRJMOD}/Placa telemetria 0.1-rescue.lib")(options "")(descr ""))
+)

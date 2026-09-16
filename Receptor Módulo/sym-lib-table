@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Receptor-Módulo-rescue)(type Legacy)(uri "${KIPRJMOD}/Receptor Módulo-rescue.lib")(options "")(descr ""))
+)
